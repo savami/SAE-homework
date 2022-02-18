@@ -17,4 +17,8 @@ function checkArray(variableName) {
     console.log(Array.isArray(variableName))
 }
 
-checkArray()
+checkArray(fox)
+checkArray(obj)
+checkArray(helloWorld)
+checkArray(zero)
+checkArray(nothing)
