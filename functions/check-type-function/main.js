@@ -14,11 +14,11 @@ var zero = null;
 var nothing = undefined;
 
 function checkArray(variableName) {
-    console.log(Array.isArray(variableName))
+    return Array.isArray(variableName);
 }
 
-checkArray(fox)
-checkArray(obj)
-checkArray(helloWorld)
-checkArray(zero)
-checkArray(nothing)
+console.log(checkArray(fox))
+console.log(checkArray(obj))
+console.log(checkArray(helloWorld))
+console.log(checkArray(zero))
+console.log(checkArray(nothing))
