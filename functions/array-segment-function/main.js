@@ -1,6 +1,8 @@
-var myArray = [['Renault', 'Peugeot', 'Mazda'], ['Apple', 'Orange', 'Watermelon'], ['Harry', 'Sava', 'Mihailo', 'Yongxin']],
-    firstElement = myArray.map(function(array) {
-        return array[0];
-    });
+var preArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(firstElement)
+function getData(arr, n = 1) {
+    return arr.splice(0, n)
+}
+
+var result = getData(preArr)
+console.log(result)
