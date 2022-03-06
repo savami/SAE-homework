@@ -1,3 +1,4 @@
+/* STYLING */
 #firstNameError,
 #lastNameError,
 #ageError,
@@ -26,6 +27,7 @@
     display: block;
 }
 
+/* ERROR STYLING */
 .error {
     display: block !important;
     color: white !important;

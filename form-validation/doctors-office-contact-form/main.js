@@ -132,24 +132,24 @@ function validateForm(event) {
 
 firstNameInput.addEventListener('keydown', function(){
     firstNameError.classList.remove('error')
-})
+});
 
 lastNameInput.addEventListener('keydown', function(){
     lastNameError.classList.remove('error')
-})
+});
 
 ageInput.addEventListener('keydown', function(){
     ageError.classList.remove('error')
-})
+});
 
 genderInput.addEventListener('keydown', function(){
     genderError.classList.remove('error')
-})
+});
 
 phoneInput.addEventListener('keydown', function(){
     phoneError.classList.remove('error')
-})
+});
 
 emailInput.addEventListener('keydown', function(){
     emailError.classList.remove('error')
-})
+});
