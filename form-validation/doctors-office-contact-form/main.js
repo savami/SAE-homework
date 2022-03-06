@@ -26,15 +26,8 @@ function errorMessage(errorSelector=null) {
     if (errorSelector !== null) {
         hasError = true;
         errorSelector.classList.add('error');
-        // errorSelector.style.display = "block"
-        // errorSelector.style.color = "white"
-        // errorSelector.style.backgroundColor = "red"
     }
 }
-
-// function removeError() {
-//     inputSelector.classList.remove('error');
-// }
 
 function validateForm(event) {
     event.preventDefault();
