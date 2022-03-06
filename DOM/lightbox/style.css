@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  .overlay img {
+    max-height: 90%;
+    max-width: 90%;
+  }
+  
+  .overlay .overlayBackground {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
