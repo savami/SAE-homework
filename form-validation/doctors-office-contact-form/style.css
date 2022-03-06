@@ -1,3 +1,4 @@
+/* STYLING */
 #firstNameError,
 #lastNameError,
 #ageError,
@@ -24,6 +25,13 @@
     width: 258px;
     margin-bottom: 15px;
     display: block;
+}
+
+/* ERROR STYLING */
+.error {
+    display: block !important;
+    color: white !important;
+    background-color: red !important;
 }
 
 form p {
