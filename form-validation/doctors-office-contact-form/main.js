@@ -25,11 +25,16 @@ var hasError = false;
 function errorMessage(errorSelector=null) {
     if (errorSelector !== null) {
         hasError = true;
-        errorSelector.style.display = "block"
-        errorSelector.style.color = "white"
-        errorSelector.style.backgroundColor = "red"
+        errorSelector.classList.add('error');
+        // errorSelector.style.display = "block"
+        // errorSelector.style.color = "white"
+        // errorSelector.style.backgroundColor = "red"
     }
 }
+
+// function removeError() {
+//     inputSelector.classList.remove('error');
+// }
 
 function validateForm(event) {
     event.preventDefault();
@@ -118,7 +123,7 @@ function validateForm(event) {
         console.log('Email is empty')
     } else {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
-            return true;
+            console.log('Email validation passed')
         } else {
             errorMessage(emailError);
             emailError.innerText = "Please enter a proper e-mail address"
@@ -130,9 +135,28 @@ function validateForm(event) {
         console.log('Form succesfully submitted')
         form.submit();
     }
-
-    console.log(hasError)
-
 }
 
-console.log(hasError)
+firstNameInput.addEventListener('keydown', function(){
+    firstNameError.classList.remove('error')
+})
+
+lastNameInput.addEventListener('keydown', function(){
+    lastNameError.classList.remove('error')
+})
+
+ageInput.addEventListener('keydown', function(){
+    ageError.classList.remove('error')
+})
+
+genderInput.addEventListener('keydown', function(){
+    genderError.classList.remove('error')
+})
+
+phoneInput.addEventListener('keydown', function(){
+    phoneError.classList.remove('error')
+})
+
+emailInput.addEventListener('keydown', function(){
+    emailError.classList.remove('error')
+})

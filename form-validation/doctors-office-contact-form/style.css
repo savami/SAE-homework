@@ -26,6 +26,12 @@
     display: block;
 }
 
+.error {
+    display: block !important;
+    color: white !important;
+    background-color: red !important;
+}
+
 form p {
     margin: -10px 0 5px 1px;
     width: 257px;
