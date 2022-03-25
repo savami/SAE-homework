@@ -50,10 +50,6 @@ function readCookie(cookieName) {
     return null;
 }
 
-function eraseCookie(cookieName) {
-    this.createCookie(cookieName, '', -1);
-}
-
 function removeBanner() {
     bannerSelector.classList.add('slideOut');
     
