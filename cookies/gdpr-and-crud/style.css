@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    /* height: 100vh; */
+}
+
+#banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+#banner.slideOut {
+    left: -100%;
+}
+
+#banner button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
