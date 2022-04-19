@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', getTemp);
 function getTemp() {
     var req = new XMLHttpRequest();
     var city = document.querySelector('#cityName').value;
-    var endpoint = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=9c70a85a5a1836b0ef0a9512d4bf2aaf';
+    var endpoint = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=YOUR_API_KEY';
     // Multiple queries are done by ?[name]=[value]&[name2]=[value2]
     
     
