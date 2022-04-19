@@ -1,0 +1,67 @@
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 250px;
+    width: 350px;
+}
+
+.outerContainer {
+    overflow: hidden;
+    height: 250px;
+}
+
+.textContainer {
+    position: relative;
+    display: block;
+    width: 350px;
+    background: rgba(0, 0, 0, .6);
+    transition: 1.5s;
+}
+
+p {
+    margin: 0;
+    padding: 10px 20px 10px 10px;
+    font-size: 10px;
+    color: white;
+    min-height: 26px;
+}
+
+i.infoBtn.blastOut {
+    animation: blastOut 1s forwards;
+}
+
+i.infoBtn.blastIn {
+    animation: blastIn 1s forwards;
+}
+
+img {
+    height: 250px;
+}
+
+i {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    /* display: inline-block;
+    color: white; */
+}
+
+.outerContainer i {
+    display: inline-block;
+    color: white;
+}
+
+
+@keyframes blastOut {
+    0% {transform: scale(1)}
+    20% {transform: scale(1.2)}
+    100% {transform: scale(0)}
+}
+
+@keyframes blastIn {
+    0% {transform: scale(0)}
+    60% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}

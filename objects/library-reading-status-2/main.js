@@ -15,18 +15,12 @@ var library = [
     } 
 ];
 
-const readStatus = (element) => element === true;
-
-
-library.forEach(book => {
-    for (let key in book) {
-        console.log(`${key}: ${book[key]}`);
-        library.some(readStatus)
-
-        if (readStatus === true) {
-            console.log('You already read ' + library.title + " by " + library.author)
-        } else {
-            console.log('You still need to read ' + library.title + " by " + library.author)
-        }
+for (let book in library) {
+    if (library[book].alreadyRead === true) {
+        console.log('You already read ' + library[book].title + " by " + library[book].author)
+    } else if (library[book].alreadyRead === false) {
+        console.log('You still need to read ' + library[book].title + " by " + library[book].author)
+    } else {
+        console.log('An error has occured')
     }
-});
+};

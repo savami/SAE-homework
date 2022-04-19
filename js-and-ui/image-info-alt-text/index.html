@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Info Alt Text</title>
+    <script src="https://kit.fontawesome.com/8787cbbc0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="outerContainer">
+        <span class="imageContainer">
+            <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="aurora" alt="Aurora Borealis">
+            <i onclick="openDesc()" class="infoBtn fa-solid fa-circle-info"></i>
+        </span>
+
+        <span class="textContainer">
+            <p class="imgDesc"></p>
+            <i onclick="closeDesc()" class="xBtn fa-solid fa-circle-xmark"></i>
+        </span>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
