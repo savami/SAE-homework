@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">    
+            <h1 class="title">VueJS Calorie Counter</h1>
+            <div class="long">Name</div>
+            <div class="short">Calories</div>
+            <div class="short">Fat</div>
+            <div class="short">Carbs</div>
+            <div class="short">Protein</div>
+        </div>
+        
+        <div v-for="(item, index) in food" class="items">
+            <input type="text" class="long" v-model="item.name">
+            <input type="text" class="short" v-model="item.calories">
+            <input type="text" class="short" v-model="item.fat">
+            <input type="text" class="short" v-model="item.carbs">
+            <input type="text" class="short" v-model="item.protein">
+            <button @click="removeItem(index)"><img src="https://www.svgrepo.com/show/389515/x.svg" intrinsicsize="512 x 512" width="20" height="20" srcset="https://www.svgrepo.com/show/389515/x.svg 4x" alt="X SVG Vector" title="X SVG Vector"></button>
+        </div>
+        
+        <div class="totals">
+            <div class="long">Totals:</div>
+            <div class="short">{{ totals.calories }}</div>
+            <div class="short"> {{ totals.carbs }} </div>
+            <div class="short"> {{ totals.fat }} </div>
+            <div class="short"> {{ totals.protein }} </div>
+        </div>
+        
+        <div class="new-items">
+            <input @keyup.enter="addNewItem" type="text" v-model="newItem.name" class="long" placeholder="Food name">
+            <input @keyup.enter="addNewItem" type="text" class="short" class="short" v-model="newItem.calories" placeholder="calories">
+            <input @keyup.enter="addNewItem" type="text" class="short" class="short" v-model="newItem.carbs" placeholder="carbs">
+            <input @keyup.enter="addNewItem" type="text" class="short" class="short" v-model="newItem.fat" placeholder="fat">
+            <input @keyup.enter="addNewItem" type="text" class="short" class="short" v-model="newItem.protein" placeholder="protein">
+            <button @click="addNewItem"><img src="https://www.svgrepo.com/show/30426/add.svg" intrinsicsize="512 x 512" width="20" height="20" srcset="https://www.svgrepo.com/show/30426/add.svg 4x" alt="Add SVG Vector" title="Add SVG Vector"></button>
+        </div>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
