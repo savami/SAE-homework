@@ -1,0 +1,47 @@
+#app {
+    border-radius: 10%;
+}
+
+thead {
+    background-color: lightgreen;
+    font-size: 20px;
+}
+
+td {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+th, td {
+    padding: 20px;
+}
+
+td:last-child {
+    background-color: white;
+}
+
+th.totals {
+    background-color: lightskyblue;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    height: 30px;
+    font-size: 16px;
+}
+
+input.short {
+    width: 75px;
+    text-align: center;
+}
+
+input.long {
+    width: auto;
+}
+
+button {
+    text-align: center;
+    background-color: white;
+    border: none;
+}

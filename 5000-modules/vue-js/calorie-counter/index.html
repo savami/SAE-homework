@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="app">
+            <table>
+                <thead>
+                    <th>Name </th>
+                    <th>Calories </th>
+                    <th>Carbs </th>
+                    <th>Fat </th>
+                    <th>Protein </th>
+                </thead>
+                <tbody>
+                <tr v-for="(item, index) in food">
+                    <td><input type="text" class="long" v-model="item.name"></td>
+                    <td><input type="text" class="short" v-model="item.calories"></td>
+                    <td><input type="text" class="short" v-model="item.fat"></td>
+                    <td><input type="text" class="short" v-model="item.carbs"></td>
+                    <td><input type="text" class="short" v-model="item.protein"></td> 
+                    <td><button @click="removeItem(index)"><img src="https://www.svgrepo.com/show/389515/x.svg" intrinsicsize="512 x 512" width="20" height="20" srcset="https://www.svgrepo.com/show/389515/x.svg 4x" alt="X SVG Vector" title="X SVG Vector"></button></td>   
+                </tr>
+                <div class="totals-container">
+                    <tr>
+                        <th class="totals">Totals</th>
+                        <th class="totals">{{ totals.calories }} </th>
+                        <th class="totals">{{ totals.carbs }} </th>
+                        <th class="totals">{{ totals.fat }} </th>
+                        <th class="totals">{{ totals.protein }} </th>
+                    </tr>
+                </div>
+                    
+                <tr>
+                <td><input @keyup.enter="addNewItem" type="text" v-model="newItem.name" placeholder="Food name"></td>
+                <td><input @keyup.enter="addNewItem" type="text" class="short" v-model="newItem.calories" placeholder="calories"></td>
+                <td><input @keyup.enter="addNewItem" type="text" class="short" v-model="newItem.carbs" placeholder="carbs"></td>
+                <td><input @keyup.enter="addNewItem" type="text" class="short" v-model="newItem.fat" placeholder="fat"></td>
+                <td><input @keyup.enter="addNewItem" type="text" class="short" v-model="newItem.protein" placeholder="protein"></td>
+                <td><button @click="addNewItem"><img src="https://www.svgrepo.com/show/30426/add.svg" intrinsicsize="512 x 512" width="20" height="20" srcset="https://www.svgrepo.com/show/30426/add.svg 4x" alt="Add SVG Vector" title="Add SVG Vector"></button></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
