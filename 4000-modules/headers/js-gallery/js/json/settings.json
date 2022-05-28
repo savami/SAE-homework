@@ -1,0 +1,9 @@
+{
+    "settings": {
+        "transitionTime": ".6s",
+        "slideInterval": "4000",
+        "width": "400px",
+        "height": "200px",
+        "autoplay": true
+    }
+}

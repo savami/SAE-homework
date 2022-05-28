@@ -1,0 +1,31 @@
+body {
+    background-color: red;
+}
+
+p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+#marquee,
+#marquee2 {
+    transition: .5s;
+    font-size: 40px;
+    font-family: 'Comic Neue', cursive;
+}
+
+div:nth-child(3) {
+    margin-top: 150px;
+}
+
+#doge {
+    position: absolute;
+    bottom: 5%;
+}
+
+.dogeMoved {
+    right: 5%;
+}

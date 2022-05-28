@@ -1,0 +1,17 @@
+.slick-dots {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.slick-dots button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
