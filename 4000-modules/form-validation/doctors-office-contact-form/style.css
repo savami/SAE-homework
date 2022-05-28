@@ -1,0 +1,41 @@
+/* STYLING */
+#firstNameError,
+#lastNameError,
+#ageError,
+#genderError,
+#phoneError,
+#emailError,
+#messageError {
+    display: none;
+    color: red;
+}
+
+#firstName,
+#lastName,
+#age,
+#phone,
+#email,
+#message {
+    display: block;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+#gender {
+    width: 258px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ERROR STYLING */
+.error {
+    display: block !important;
+    color: white !important;
+    background-color: red !important;
+}
+
+form p {
+    margin: -10px 0 5px 1px;
+    width: 257px;
+}
+
