@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <h1>Welcome to VB Vue app</h1>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
     <router-view/>
-    <p>Copright 2022</p>
   </div>
 </template>
 
