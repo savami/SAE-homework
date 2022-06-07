@@ -1,0 +1,3 @@
+// Sort by timestamp
+// Display timestamp day/month format
+V - Read status opacity
