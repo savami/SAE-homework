@@ -34,7 +34,7 @@
     }
     .readStatus {
         opacity: 0.4;
-        color: rgba($color: #000000, $alpha: 0.35)
+        color: rgba(0, 0, 0, 0.35)
     }
     .date {
         font-size: 11px;
