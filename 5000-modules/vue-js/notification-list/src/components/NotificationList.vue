@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// import moment from 'moment';
 import axios from 'axios'
 import SingleNotification from '@/components/SingleNotification.vue'
 
@@ -23,17 +22,13 @@ export default {
     axios
       .get('https://api.npoint.io/7d9430a23ac464c1c025')
       .then(response => {
+        response.data.notifications.sort(function(a, b){
+          return b['timestamp'] - a['timestamp']
+          });
         console.log(response.data.notifications);
         this.notifications = response.data.notifications
       })
   },
-  // mounted() {
-  //   console.log(this.notifications.timestamp)
-  //   return this.notifications.slice()
-  //     .sort(( a, b) => {
-  //       return new Date(a.timestamp)- new Date(b.timestmap);
-  //     });
-  // }
 }
 </script>
 
