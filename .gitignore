@@ -1,5 +1,6 @@
 sass
 # .gitignore
+.DS_Store
 */**/.DS_Store
 virtuous-animation
 */**/node_modules
