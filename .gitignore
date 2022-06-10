@@ -1,6 +1,6 @@
 sass
 # .gitignore
-/**/.DS_Store
+*/**/.DS_Store
 virtuous-animation
 */**/node_modules
 4000-modules/git addobjects/practice-object-constructor
