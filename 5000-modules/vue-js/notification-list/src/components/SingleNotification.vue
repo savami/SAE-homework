@@ -53,8 +53,8 @@ import moment from 'moment'
             notifDetails: Object
         },
         methods: {
-            convertTimestamp: function(value) {
-                var dateString = moment.unix(value).format("DD/MM - hh:mm")
+            convertTimestamp: function(timestamp) {
+                var dateString = moment.unix(timestamp).format("DD/MM - hh:mm")
                 return dateString;
             }
         }

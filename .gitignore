@@ -1,0 +1,21 @@
+sass
+# .gitignore
+virtuous-animation
+*/**/node_modules
+4000-modules/git addobjects/practice-object-constructor
+cant-finish.txt
+.history
+bootstrap
+form-validation/doctors-office-contact-form/main-old.js
+form-validation/doctors-office-contact-form/staircase.js
+form-validation/doctors-office-contact-form/main-almost.js
+form-validation/matchmaking-app/copy-pasta.js
+form-validation/matchmaking-app/main2.js
+form-validation/matchmaking-app/main3.js
+regex/practice
+tailwind
+.vscode
+headers/js-gallery/js/json
+finals
+node
+regex
