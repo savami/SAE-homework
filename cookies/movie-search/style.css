@@ -1,0 +1,12 @@
+ul.movieList {
+    list-style-type: none;
+}
+
+ul.movieList h3 {
+    font-size: 2rem;
+}
+
+ul.movieList li {
+    margin: 10px auto 80px auto;
+    /* border-bottom: 1px solid black; */
+}

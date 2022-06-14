@@ -4,7 +4,9 @@
     <div class="login">
         <h1>Log In</h1>
         <input v-model="inputs.username" @keyup.enter="logMeIn" type="text" placeholder="Username">
+        <br>
         <input v-model="inputs.password" @keyup.enter="logMeIn" type="password" placeholder="Password">
+        <br>
         <button @click="logMeIn">Log In</button>
     </div>
 </template>

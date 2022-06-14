@@ -4,9 +4,11 @@
   <div>
       <nav>
         <router-link to="/">Home</router-link> 
+        <router-link to="/youtube"> | YouTube</router-link>
         <router-link to="/login" v-if="!this.$store.state.loggedIn"> | Login</router-link>
         <span v-else @click="logMeOut"> | Log Out</span>
       </nav>
+        <hr>
       <router-view/>
     </div>
 </template>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LogIn from '../views/LogIn.vue'
+import YouTube from '../views/YouTube.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LogIn
+  },
+  {
+    path: '/youtube',
+    name: 'youtube',
+    component: YouTube
   }
 ]
 

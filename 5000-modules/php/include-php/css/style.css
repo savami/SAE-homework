@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}

@@ -1,3 +1,5 @@
+// Practice of VueX states & mutations
+
 import { createStore } from 'vuex'
 
 export default createStore({
