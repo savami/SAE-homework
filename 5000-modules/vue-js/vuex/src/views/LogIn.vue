@@ -19,6 +19,7 @@
 </style>
 
 <script>
+import cookie from '@/cookie/cookie.js';
 
 export default {
     name: 'LogIn',
@@ -41,6 +42,7 @@ export default {
                 this.inputs.password === this.credentials.password
             ) {
                 this.$store.commit('loginStateTrue');
+                cookie.createCookie('logInState', 'true', 5);
                 this.$router.push('/');
             } else {
                 this.$store.commit('failedLoginCounter')

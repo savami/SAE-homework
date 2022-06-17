@@ -14,9 +14,14 @@
 </template>
 
 <script>
+import cookie from '@/cookie/cookie.js';
 
 export default {
   beforeCreate() {
+    if (cookie.getCookie('logInState') == "true") {
+      this.$store.state.loggedIn = true;
+    }
+
     if (this.$store.state.loggedIn === false) {
       this.$router.push('/login');
     }
